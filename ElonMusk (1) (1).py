@@ -73,10 +73,6 @@ st.title("Ask Anything About Elon Musk")
 # Chat container to display conversation
 chat_container = st.container()
 
-# Input field for queries
-with st.container():  # Separate container for input field
-    query = st.text_input("Please enter a query", label_visibility="collapsed")  # Hides label for a cleaner look
-    send_button=st.button("Send", key='send_btn')
 with st.container():
     query = st.text_input("Please enter a query", label_visibility="collapsed", key="query")
     send_button = st.button("Send", key="send_btn")  # Single send button
